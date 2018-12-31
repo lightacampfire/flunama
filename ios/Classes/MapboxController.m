@@ -49,7 +49,7 @@
         [_options apply:_mapView json:args[@"options"]];
         
         NSString* channelName =
-            [NSString stringWithFormat:@"barna.io/mapbox_%lld", viewId];
+            [NSString stringWithFormat:@"lightacampfire.com/mapbox_%lld", viewId];
         _channel = [FlutterMethodChannel methodChannelWithName:channelName
                                                binaryMessenger:registrar.messenger];
         __weak __typeof__(self) weakSelf = self;

@@ -50,7 +50,7 @@ final class MapBoxController
         this.activityState = activityState;
         this.registrar = registrar;
         methodChannel =
-            new MethodChannel(registrar.messenger(), "barna.io/mapbox_" + id);
+            new MethodChannel(registrar.messenger(), "lightacampfire.com/mapbox_" + id);
         methodChannel.setMethodCallHandler(this);
         this.registrarActivityHashCode = registrar.activity().hashCode();
     }

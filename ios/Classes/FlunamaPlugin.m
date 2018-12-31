@@ -9,7 +9,7 @@
 
 + (void)registerWithRegistrar:(NSObject<FlutterPluginRegistrar>*)registrar {
   FLTMapBoxFactory* mapboxFactory = [[FLTMapBoxFactory alloc] initWithRegistrar:registrar];
-  [registrar registerViewFactory:mapboxFactory withId:@"barna.io/mapbox"];
+  [registrar registerViewFactory:mapboxFactory withId:@"lightacampfire.com/mapbox"];
 }
 
 - (FLTMapBoxController*)mapFromCall:(FlutterMethodCall*)call error:(FlutterError**)error {

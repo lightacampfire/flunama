@@ -36,7 +36,7 @@ class _MapBoxState extends State<MapBox> {
   Widget build(BuildContext context) {
     if (defaultTargetPlatform == TargetPlatform.android) {
       return AndroidView(
-        viewType: 'barna.io/mapbox',
+        viewType: 'lightacampfire.com/mapbox',
         onPlatformViewCreated: onPlatformViewCreated,
         gestureRecognizers: widget.gestureRecognizers,
         creationParams: <String, dynamic>{
@@ -46,7 +46,7 @@ class _MapBoxState extends State<MapBox> {
       );
     } else if (defaultTargetPlatform == TargetPlatform.iOS) {
       return UiKitView(
-        viewType: 'barna.io/mapbox',
+        viewType: 'lightacampfire.com/mapbox',
         onPlatformViewCreated: onPlatformViewCreated,
         gestureRecognizers: widget.gestureRecognizers,
         creationParams: <String, dynamic>{
